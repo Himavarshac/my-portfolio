@@ -1,0 +1,655 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #252525;
+}
+
+/* Navigation */
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo span {
+    color: #b58a5a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b58a5a;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 12%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #b58a5a;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #b58a5a;
+}
+
+.hero h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #777777;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #252525;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b58a5a;
+}
+
+.btn.secondary {
+    background: white;
+    color: #252525;
+    border: 1px solid #252525;
+}
+
+.btn.secondary:hover {
+    background: #252525;
+    color: white;
+}
+
+
+.section-tag {
+    color: #b58a5a;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.skill-group,
+.experience-card,
+.project-card {
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.skill-group h3,
+.experience-card h3,
+.project-card h3 {
+    margin-bottom: 12px;
+}
+
+.experience-card h4 {
+    color: #b58a5a;
+    margin-bottom: 10px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    line-height: 2;
+    color: #777777;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    color: #777777;
+}
+
+.project-card span {
+    color: #b58a5a;
+    font-size: 13px;
+}
+
+
+/* About Section Design */
+
+.about-section {
+    padding: 100px 12%;
+    background-color: #faf9f7;
+}
+
+.about-section .section-tag {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #b58a5a;
+    margin-bottom: 12px;
+}
+
+.about-section h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    max-width: 850px;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+/* Skills Section Design */
+
+.skills-section {
+    padding: 100px 12%;
+    background-color: #ffffff;
+}
+
+.skills-section .section-tag {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #b58a5a;
+    margin-bottom: 12px;
+}
+
+.skills-section h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.skills-content {
+    max-width: 850px;
+}
+
+.skills-content .skill-group {
+    margin-top: 22px;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background-color: #faf9f7;
+    transition: 0.3s ease;
+}
+
+.skills-content .skill-group:hover {
+    transform: translateY(-4px);
+    border-color: #b58a5a;
+}
+
+.skills-content .skill-group h3 {
+    font-size: 20px;
+    color: #252525;
+    margin-bottom: 12px;
+}
+
+.skills-content .skill-group p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #666666;
+}
+
+
+/* Experience Section */
+.experience-section {
+    padding: 100px 12%;
+    background-color: #faf9f7;
+}
+
+.experience-section .section-tag {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #b58a5a;
+    margin-bottom: 12px;
+}
+
+.experience-section h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.experience-content {
+    max-width: 850px;
+}
+
+.experience-card {
+    margin-top: 22px;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-left: 4px solid #b58a5a;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    border-color: #b58a5a;
+}
+
+.experience-card h3 {
+    font-size: 21px;
+    color: #252525;
+    margin-bottom: 8px;
+}
+
+.experience-card h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #b58a5a;
+    margin-bottom: 10px;
+}
+
+.experience-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 18px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+}
+
+.experience-card li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 12%;
+    background-color: #fff;
+}
+
+.projects-section .section-tag {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #b58a5a;
+    margin-bottom: 12px;
+}
+
+.projects-section h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.projects-content {
+    max-width: 850px;
+}
+
+.project-card {
+    margin-top: 22px;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-left: 4px solid #b58a5a;
+    border-radius: 8px;
+    background-color: #faf9f7;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #b58a5a;
+}
+
+.project-card h3 {
+    font-size: 21px;
+    color: #252525;
+    margin-bottom: 16px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.project-tech {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-color: #f0e8df;
+    color: #9b744c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-tech span {
+    margin: 0 4px;
+    color: #b58a5a;
+}
+
+
+#internships {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#internships .experience-card {
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    #internships {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+/* Education Section */
+#education {
+    padding: 80px 60px;
+    background: #fff;
+}
+
+#education .section-tag,
+#education h2 {
+    margin-left: 80px;
+}
+
+#education .section-tag {
+    font-size: 14px;
+}
+
+#education h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.education-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.education-card {
+    padding: 30px 25px;
+    background: #faf9f7;
+    border: 1px solid #eee9e3;
+    border-left: 4px solid #b58a5a;
+    border-radius: 12px;
+    min-height: 230px;
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-year {
+    font-size: 13px;
+    color: #888;
+    font-weight: 600;
+}
+
+.education-card h3 {
+    margin: 15px 0 10px;
+    font-size: 19px;
+}
+
+.education-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.education-score {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 16px;
+    background: #f0e8df;
+    color: #9b744c;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Internships Section */
+#internships {
+    padding: 80px 60px;
+    background: #faf9f7;
+}
+
+#internships .section-tag,
+#internships h2 {
+    margin-left: 100px;
+}
+
+#internships .section-tag {
+    font-size: 15px;
+}
+
+#internships h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#internships .experience-card {
+    width: 100%;
+    max-width: 1005px;
+    margin: 25px 0 25px 100px;
+    padding: 30px 36px;
+    background: #fff;
+    border: 1px solid #eee9e3;
+    border-left: 4px solid #b58a5a;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#internships .experience-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+#internships .experience-subtitle {
+    color: #b58a5a;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#internships .experience-card ul {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+#internships .experience-card li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 850px;
+    margin: 40px auto 0;
+}
+
+.contact-card {
+    flex: 1;
+    padding: 30px 25px;
+    background: #faf9f7;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #999;
+}
+
+.contact-card p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+.contact-footer {
+    margin-top: 35px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .education-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #internships .experience-card {
+        margin-left: 30px;
+        max-width: calc(100% - 30px);
+    }
+
+    #internships .section-tag,
+    #internships h2 {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #education,
+    #internships {
+        padding: 50px 20px;
+    }
+
+    #education .section-tag,
+    #education h2,
+    #internships .section-tag,
+    #internships h2 {
+        margin-left: 0;
+    }
+
+    #education h2,
+    #internships h2 {
+        font-size: 36px;
+    }
+
+    .education-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    #internships .experience-card {
+        margin: 22px 0;
+        max-width: 100%;
+        padding: 22px;
+    }
+
+    #contact {
+        padding: 50px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
